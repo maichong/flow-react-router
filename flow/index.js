@@ -1,21 +1,21 @@
 declare module 'react-router' {
 
   /* components */
-  declare export var Router: React$Component<any, any, any>;
-  declare export var Link: React$Component<any, any, any>;
-  declare export var IndexLink: React$Component<any, any, any>;
-  declare export var withRouter: (component: React$Component<any, any, any>,
-                                  options: ?{ withRef:boolean }) => React$Component<any, any, any>;
+  declare export var Router: Class<React$Component<any, any, any>>;
+  declare export var Link: Class<React$Component<any, any, any>>;
+  declare export var IndexLink: Class<React$Component<any, any, any>>;
+  declare export var withRouter: (component: Class<React$Component<any, any, any>>,
+                                  options: ?{ withRef:boolean }) => Class<React$Component<any, any, any>>;
 
   /* components (configuration) */
-  declare export var IndexRedirect: React$Component<any, any, any>;
-  declare export var IndexRoute: React$Component<any, any, any>;
-  declare export var Redirect: React$Component<any, any, any>;
-  declare export var Route: React$Component<any, any, any>;
+  declare export var IndexRedirect: Class<React$Component<any, any, any>>;
+  declare export var IndexRoute: Class<React$Component<any, any, any>>;
+  declare export var Redirect: Class<React$Component<any, any, any>>;
+  declare export var Route: Class<React$Component<any, any, any>>;
 
   /* utils */
   declare export var createRoutes: (routes: React$Element<any>) => Array<Object>;
-  declare export var RouterContext: React$Component<any, any, any>;
+  declare export var RouterContext: Class<React$Component<any, any, any>>;
   declare export var locationShape: Function;
   declare export var routerShape: Function;
   declare export var match: Function;
